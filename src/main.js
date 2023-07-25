@@ -14,9 +14,20 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 import { faHouse } from '@fortawesome/free-solid-svg-icons'
 import { faFileArrowUp } from '@fortawesome/free-solid-svg-icons'
 import { faLightbulb } from '@fortawesome/free-solid-svg-icons'
+import { faPersonChalkboard } from '@fortawesome/free-solid-svg-icons'
+import { faBookOpenReader } from '@fortawesome/free-solid-svg-icons'
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
+import { faSignature } from '@fortawesome/free-solid-svg-icons'
+import { faPencil } from '@fortawesome/free-solid-svg-icons'
+import { faAward } from '@fortawesome/free-solid-svg-icons'
+import { faCircleExclamation } from '@fortawesome/free-solid-svg-icons'
+import { faBed } from '@fortawesome/free-solid-svg-icons'
+import { faBuilding } from '@fortawesome/free-solid-svg-icons'
+import { faComments } from '@fortawesome/free-solid-svg-icons'
 
 /* add icons to the library */
-library.add(faUser,faHouse,faFileArrowUp,faLightbulb)
+library.add(faUser,faHouse,faFileArrowUp,faLightbulb,faPersonChalkboard,faBookOpenReader,faArrowUpRightFromSquare,
+            faSignature,faPencil,faAward,faCircleExclamation,faBed,faBuilding,faComments)
 
 const app = createApp(App);
 app.use(router);

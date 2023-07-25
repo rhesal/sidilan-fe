@@ -14,6 +14,11 @@ const routes = [
         component: () => import('../views/pages/peserta.vue')
     },
     {
+        path: '/',
+        name: 'pages.biodata',
+        component: () => import('../views/pages/biodata.vue')
+    },
+    {
         path: '/posts',
         name: 'posts.index',
         component: () => import('../views/posts/index.vue')

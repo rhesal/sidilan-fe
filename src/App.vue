@@ -24,12 +24,21 @@
               <router-link :to="{ name: 'pages.peserta' }" class="nav-link" aria-current="page">Beranda</router-link>
             </li>
             <li class="nav-item">
+              <router-link :to="{ name: '' }" class="nav-link" aria-current="page">Jadwal</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link :to="{ name: '' }" class="nav-link" aria-current="page">Panduan</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link :to="{ name: '' }" class="nav-link" aria-current="page">Kontak</router-link>
+            </li>
+            <li class="nav-item">
               <router-link :to="{ name: 'posts.index' }" class="nav-link active" aria-current="page">POSTS</router-link>
             </li>
           </ul>
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0" role="search">
             <a
-              href="https://santrikoding.com"
+              href=""
               target="_blank"
               class="btn btn-success"
               >Masuk</a>
@@ -41,5 +50,8 @@
     <!--- render router view -->
     <router-view></router-view>
 
+    <footer class="bg-dark py-4 text-white text-center">
+      <p>Hak Cipta © {{ currentYear }} Nama Perusahaan. Seluruh Hak Cipta Dilindungi.</p>
+    </footer>
   </div>
 </template>
