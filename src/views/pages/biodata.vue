@@ -12,7 +12,7 @@
             <div class="card-body">
                 <p class="card-text text-warning-emphasis">Pastikan bahwa isian formulir biodata Anda benar sebelum mendaftar pelatihan. Kesalahan data di sertifikat pelatihan yang telah terbit tidak dapat dikoreksi.</p>
                 <div class="btn-group" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-warning">
+                    <button type="button" class="btn btn-warning" @click="showModal = true">
                         <font-awesome-icon icon="pencil" size="lg"/><span class="mx-2">Edit Biodata</span> 
                     </button>
                 </div>
@@ -207,4 +207,129 @@
             </div>
         </fieldset>
     </div>
+
+    <div>
+        <Modal v-if="showModal" :title="modalTitle" @close="showModal = false">
+            <!-- Konten di dalam modal -->
+            <div class="card my-4 mx-2 w-auto bg-info-subtle">
+                <div class="card-body">
+                        <p class="card-text text-info-emphasis">Semua kolom isian wajib terisi. Jika kosong, isi dengan tanda "-".</p>
+                </div>
+            </div>
+            <fieldset class="mx-2 border border-primary rounded position-relative">
+                <legend class="w-auto h6 bg-white position-absolute top-0 start-0 translate-middle" style="margin-left: 65px; font-weight: 600;">Data Pribadi</legend>
+                <div class="my-4"></div>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <span class="mx-4">Pas Foto</span>
+                        <img src="" class="img-thumbnail mx-4 d-block"  alt="Pas Foto">
+                    </div>
+                    <div class="col-md-9">
+                        <span class="">Foto Peserta (pas foto formal, ukuran 3×4, background merah)</span>
+                        <input type="file" class="form-control" @change="handleFileChange($event)">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <span class="mx-4" style="font-weight: bold;">NIK</span>
+                        <p class="mx-4">-</p>
+                    </div>
+                    <div class="col-md">
+                        <span class="" style="font-weight: bold;">Nama Lengkap</span>
+                        <p class="">-</p>
+                    </div>
+                    <div class="col-md-2">
+                        <span class="" style="font-weight: bold;">Gelar (depan)</span>
+                        <p class="">-</p>
+                    </div>
+                    <div class="col-md-2">
+                        <span class="" style="font-weight: bold;">Gelar (belakang)</span>
+                        <p class="">-</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <span class="mx-4" style="font-weight: bold;">Nama Panggilan</span>
+                        <p class="mx-4">-</p>
+                    </div>
+                    <div class="col-md-3">
+                        <span class="" style="font-weight: bold;">Tempat Lahir</span>
+                        <p class="">-</p>
+                    </div>
+                    <div class="col-md-2">
+                        <span class="" style="font-weight: bold;">Tanggal Lahir</span>
+                        <p class="">-</p>
+                    </div>
+                    <div class="col-md-2">
+                        <span class="" style="font-weight: bold;">Jenis Kelamin</span>
+                        <p class="">-</p>
+                    </div>
+                    <div class="col-md-2">
+                        <span class="" style="font-weight: bold;">Agama</span>
+                        <p class="">-</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <span class="mx-4" style="font-weight: bold;">Pendidikan</span>
+                        <p class="mx-4">-</p>
+                    </div>
+                    <div class="col-md-9">
+                        <span class="" style="font-weight: bold;">Jurusan</span>
+                        <p class="">-</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9 mb-3">
+                        <span class="mx-4" style="font-weight: bold;">Alamat Rumah</span>
+                        <p class="mx-4">-</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <span class="mx-4" style="font-weight: bold;">Desa/Kelurahan</span>
+                        <p class="mx-4">-</p>
+                    </div>
+                    <div class="col-md-3">
+                        <span class="" style="font-weight: bold;">Kecamatan/Distrik</span>
+                        <p class="">-</p>
+                    </div>
+                    <div class="col-md-3">
+                        <span class="" style="font-weight: bold;">Kabupaten/Kota</span>
+                        <p class="">-</p>
+                    </div>
+                    <div class="col-md-3">
+                        <span class="" style="font-weight: bold;">Provinsi</span>
+                        <p class="">-</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <span class="mx-4" style="font-weight: bold;">No. HP</span>
+                        <p class="mx-4">-</p>
+                    </div>
+                    <div class="col-md-3">
+                        <span class="" style="font-weight: bold;">E-mail</span>
+                        <p class="">-</p>
+                    </div>
+                </div>
+        </fieldset>
+        </Modal>
+    </div>
 </template>
+
+<script>
+import Modal from '../modal/modalpeserta.vue';
+
+export default {
+    components: {
+    Modal
+    },
+    data() {
+    return {
+        showModal: false,
+        modalTitle: 'Biodata'
+    };
+    }
+};
+</script>
