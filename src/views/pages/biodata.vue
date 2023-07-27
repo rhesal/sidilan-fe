@@ -224,84 +224,110 @@
                         <span class="mx-4">Pas Foto</span>
                         <img src="" class="img-thumbnail mx-4 d-block"  alt="Pas Foto">
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md mx-5">
                         <span class="">Foto Peserta (pas foto formal, ukuran 3×4, background merah)</span>
-                        <input type="file" class="form-control" @change="handleFileChange($event)">
+                        <input type="file" class="form-control w-75" @change="handleFileChange($event)">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-3 mb-3">
                         <span class="mx-4" style="font-weight: bold;">NIK</span>
-                        <p class="mx-4">-</p>
+                        <input type="text" name="" id="" class="form-control mx-4">
                     </div>
-                    <div class="col-md">
+                    <div class="col-md-6 mx-5">
                         <span class="" style="font-weight: bold;">Nama Lengkap</span>
-                        <p class="">-</p>
-                    </div>
-                    <div class="col-md-2">
-                        <span class="" style="font-weight: bold;">Gelar (depan)</span>
-                        <p class="">-</p>
-                    </div>
-                    <div class="col-md-2">
-                        <span class="" style="font-weight: bold;">Gelar (belakang)</span>
-                        <p class="">-</p>
+                        <input type="text" name="" id="" class="form-control">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3 mb-3">
-                        <span class="mx-4" style="font-weight: bold;">Nama Panggilan</span>
-                        <p class="mx-4">-</p>
+                    <div class="col-md-3 mb-3 mx-4">
+                        <span class="" style="font-weight: bold;">Gelar (depan)</span>
+                        <input type="text" name="" id="" class="form-control">
                     </div>
                     <div class="col-md-3">
+                        <span class="" style="font-weight: bold;">Gelar (belakang)</span>
+                        <input type="text" name="" id="" class="form-control">
+                    </div>
+                    <div class="col-md-3" style="padding-left: 40px;">
+                        <span class="" style="font-weight: bold;">Nama Panggilan</span>
+                        <input type="text" name="" id="" class="form-control">
+                    </div>
+                </div>
+                <div class="row"> 
+                    <div class="col-md-3 mb-3 mx-4">
                         <span class="" style="font-weight: bold;">Tempat Lahir</span>
-                        <p class="">-</p>
+                        <input type="text" name="" id="" class="form-control">
                     </div>
                     <div class="col-md-2">
                         <span class="" style="font-weight: bold;">Tanggal Lahir</span>
-                        <p class="">-</p>
+                        <input type="date" name="" id="" class="form-control">
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2" style="padding-left: 40px;">
                         <span class="" style="font-weight: bold;">Jenis Kelamin</span>
-                        <p class="">-</p>
+                        <select name="" id="" class="form-select">
+                            <option value="Laki-laki" class="form-control">Laki-laki</option>
+                            <option value="Perempuan" class="form-control">Perempuan</option>
+                        </select>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2" style="padding-left: 40px;">
                         <span class="" style="font-weight: bold;">Agama</span>
-                        <p class="">-</p>
+                        <select name="" id="" class="form-select">
+                            <option value="Islam" class="form-control">Islam</option>
+                            <option value="Kristen" class="form-control">Kristen</option>
+                            <option value="Katolik" class="form-control">Katolik</option>
+                            <option value="Hindu" class="form-control">Hindu</option>
+                            <option value="Buddha" class="form-control">Buddha</option>
+                            <option value="Konghucu" class="form-control">Konghucu</option>
+                        </select>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3 mb-3">
-                        <span class="mx-4" style="font-weight: bold;">Pendidikan</span>
-                        <p class="mx-4">-</p>
+                    <div class="col-md-3 mb-3 mx-4">
+                        <span class="" style="font-weight: bold;">Pendidikan</span>
+                        <select name="" id="" class="form-select">
+                            <option value="Islam" class="form-control">Islam</option>
+                            <option value="Kristen" class="form-control">Kristen</option>
+                            <option value="Katolik" class="form-control">Katolik</option>
+                            <option value="Hindu" class="form-control">Hindu</option>
+                            <option value="Buddha" class="form-control">Buddha</option>
+                            <option value="Konghucu" class="form-control">Konghucu</option>
+                        </select>
                     </div>
-                    <div class="col-md-9">
-                        <span class="" style="font-weight: bold;">Jurusan</span>
-                        <p class="">-</p>
+                    <div class="col-md-6">
+                        <span class="" style="font-weight: bold;">Jurusan Pendidikan</span>
+                        <input type="text" name="" id="" class="form-control">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-9 mb-3">
-                        <span class="mx-4" style="font-weight: bold;">Alamat Rumah</span>
-                        <p class="mx-4">-</p>
+                        <span class="mx-4" style="font-weight: bold; font-size: 18px;">Alamat Rumah</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mx-4">
+                        <span class="" style="font-weight: bold;">Provinsi</span>
+                        <select name="" id="" class="form-select">
+                            <option value="-" class="form-control">-</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <span class="" style="font-weight: bold;">Kabupaten/Kota</span>
+                        <select name="" id="" class="form-select">
+                            <option value="-" class="form-control">-</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <span class="" style="font-weight: bold;">Kecamatan/Distrik</span>
+                        <select name="" id="" class="form-select">
+                            <option value="-" class="form-control">-</option>
+                        </select>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-3 mb-3">
                         <span class="mx-4" style="font-weight: bold;">Desa/Kelurahan</span>
                         <p class="mx-4">-</p>
-                    </div>
-                    <div class="col-md-3">
-                        <span class="" style="font-weight: bold;">Kecamatan/Distrik</span>
-                        <p class="">-</p>
-                    </div>
-                    <div class="col-md-3">
-                        <span class="" style="font-weight: bold;">Kabupaten/Kota</span>
-                        <p class="">-</p>
-                    </div>
-                    <div class="col-md-3">
-                        <span class="" style="font-weight: bold;">Provinsi</span>
-                        <p class="">-</p>
-                    </div>
+                    </div>   
                 </div>
                 <div class="row">
                     <div class="col-md-3 mb-3">
