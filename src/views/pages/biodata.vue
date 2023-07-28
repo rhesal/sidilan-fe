@@ -219,22 +219,22 @@
             <fieldset class="mx-2 border border-primary rounded position-relative">
                 <legend class="w-auto h6 bg-white position-absolute top-0 start-0 translate-middle" style="margin-left: 65px; font-weight: 600;">Data Pribadi</legend>
                 <div class="my-4"></div>
-                <div class="row">
+                <div class="row mx-4">
                     <div class="col-md-3 mb-3">
-                        <span class="mx-4">Pas Foto</span>
-                        <img src="" class="img-thumbnail mx-4 d-block"  alt="Pas Foto">
+                        <span class="">Pas Foto</span>
+                        <img src="" class="img-thumbnail d-block"  alt="Pas Foto">
                     </div>
-                    <div class="col-md mx-5">
+                    <div class="col-md-9">
                         <span class="">Foto Peserta (pas foto formal, ukuran 3×4, background merah)</span>
                         <input type="file" class="form-control w-75" @change="handleFileChange($event)">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3 mb-3">
-                        <span class="mx-4" style="font-weight: bold;">NIK</span>
-                        <input type="text" name="" id="" class="form-control mx-4">
+                    <div class="col-md-3 mb-3 mx-4">
+                        <span class="" style="font-weight: bold;">NIK</span>
+                        <input type="text" name="" id="" class="form-control">
                     </div>
-                    <div class="col-md-6 mx-5">
+                    <div class="col-md-6 mb-3">
                         <span class="" style="font-weight: bold;">Nama Lengkap</span>
                         <input type="text" name="" id="" class="form-control">
                     </div>
@@ -304,7 +304,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3 mx-4">
+                    <div class="col-md-3 mb-3 mx-4">
                         <span class="" style="font-weight: bold;">Provinsi</span>
                         <select name="" id="" class="form-select">
                             <option value="-" class="form-control">-</option>
@@ -316,7 +316,7 @@
                             <option value="-" class="form-control">-</option>
                         </select>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3" style="padding-left: 40px;">
                         <span class="" style="font-weight: bold;">Kecamatan/Distrik</span>
                         <select name="" id="" class="form-select">
                             <option value="-" class="form-control">-</option>
@@ -324,9 +324,9 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3 mb-3">
-                        <span class="mx-4" style="font-weight: bold;">Desa/Kelurahan</span>
-                        <p class="mx-4">-</p>
+                    <div class="col-md-9 mb-3" style="padding-left: 35px;">
+                        <span class="" style="font-weight: bold;">Desa/Kelurahan</span>
+                        <input type="text" name="" id="" class="form-control" style="width: 106.5%;">
                     </div>   
                 </div>
                 <div class="row">

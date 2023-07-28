@@ -1,21 +1,26 @@
 <template>
     <transition name="modal">
-        <div class="modal-mask" @click="$emit('close')">
-            <div class="modal-container w-75" @click.stop>
-                <div class="modal-header">
-                    <h3>{{ title }}</h3>
-                    <button class="btn-close" @click="$emit('close')"></button>
-                </div>
-                <div class="modal-body">
-                    <hr class="w-100 mx-0 px-0">
-                <slot></slot>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                    <button type="button" class="btn btn-secondary" @click="$emit('close')">Close</button>        
+        <div class="modal fade">
+            <div class="modal-dialog" @click="$emit('close')">
+                <div class="modal-content">
+                    <div class="modal-container w-75" @click.stop>
+                        <div class="modal-header">
+                            <h3>{{ title }}</h3>
+                            <button class="btn-close" @click="$emit('close')"></button>
+                        </div>
+                        <div class="modal-body">
+                            <hr class="w-100 mx-0 px-0">
+                        <slot></slot>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="button" class="btn btn-secondary" @click="$emit('close')">Close</button>        
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        
     </transition>
     </template>
     
@@ -30,7 +35,7 @@
     
     <style>
     /* Gaya untuk modal */
-    .modal-mask {
+    /* .modal-mask {
         position: fixed;
         top: 0;
         left: 0;
@@ -40,7 +45,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-    }
+    } */
     
     .modal-container {
         background-color: white;
